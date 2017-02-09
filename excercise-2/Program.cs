@@ -14,7 +14,7 @@ namespace excercise_2
             student s = new student();
             s.firstname = "jeevan";
             s.lastname = "teja";
-            s.dob = new DateTime(01/01/1992);
+            s.dob = new DateTime(1992,1,01);
             s.calculateage(out totalage, out totaldays);
             s.gender = Enum.GetName(typeof(Gender),2);
             
@@ -38,7 +38,7 @@ namespace excercise_2
         {
             
             days = (DateTime.Now.Year * 365 + DateTime.Now.DayOfYear) - (dob.Year * 365 + DateTime.Now.DayOfYear);
-            age = days / 365;
+            age = days/365;
         }
     }
 }
